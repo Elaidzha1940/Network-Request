@@ -1,8 +1,8 @@
 Basic network requests from API.
 ================================
 
+Free APIs
+---------
 ````ruby
-
-Free APIs - https://clck.ru/qz6CM
-
+https://clck.ru/qz6CM
 ````

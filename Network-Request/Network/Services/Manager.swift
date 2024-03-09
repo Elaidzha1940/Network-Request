@@ -58,7 +58,11 @@ class APIManager {
     
     static let shared = APIManager() //Singeltone
     
-    func getUsers() {
-        
+    func getUsers(completion: @escaping) (Users) -> () {
+        let request = APIType.getUsera.request
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            print(data?.count)
+        }
+        task.resume()
     }
 }

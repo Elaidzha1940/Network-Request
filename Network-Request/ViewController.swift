@@ -13,7 +13,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        makeRequest()
+        //makeRequest()
+        APIManager.shared.getUsers { users in
+            print(users.count)
+        }
     }
     
     private func makeRequest() {

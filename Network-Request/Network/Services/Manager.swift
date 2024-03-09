@@ -12,7 +12,7 @@ import Foundation
 enum APIType {
     
     case login
-    case getUsera
+    case getUsers
     case getpPosts
     case getAlbums
     
@@ -32,7 +32,7 @@ enum APIType {
     var path: String {
         switch self {
         case .login: return "login"
-        case .getUsera: return "users"
+        case .getUsers: return "users"
         case .getpPosts: return "posts"
         case .getAlbums: return "albums"
             
@@ -58,10 +58,38 @@ class APIManager {
     
     static let shared = APIManager() //Singeltone
     
-    func getUsers(completion: @escaping) (Users) -> () {
-        let request = APIType.getUsera.request
+    func getUsers(completion: @escaping (Users) -> ()) {
+        let request = APIType.getUsers.request
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            print(data?.count)
+            if let data = data, let users = try? JSONDecoder().decode(Users.self, from: data) {
+                completion(users)
+            } else {
+                completion([])
+            }
+        }
+        task.resume()
+    }
+    
+    func getPosts(completion: @escaping (Posts) -> ()) {
+        let request = APIType.getpPosts.request
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let data = data, let posts = try? JSONDecoder().decode(Posts.self, from: data) {
+                completion(posts)
+            } else {
+                completion([])
+            }
+        }
+        task.resume()
+    }
+    
+    func getAlbums(completion: @escaping (Albums) -> ()) {
+        let request = APIType.getAlbums.request
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let data = data, let albums = try? JSONDecoder().decode(Albums.self, from: data) {
+                completion(albums)
+            } else {
+                completion([])
+            }
         }
         task.resume()
     }

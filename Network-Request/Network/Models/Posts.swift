@@ -10,7 +10,7 @@
 import Foundation
 
 // MARK: - Post
-struct Post {
+struct Post: Codable {
     let userID, id: Int?
     let title, body: String?
     

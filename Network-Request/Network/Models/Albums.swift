@@ -10,7 +10,7 @@
 import Foundation
 
 // MARK: - AlbumsElement
-struct Album {
+struct Album: Codable {
     let userID, id: Int?
     let title: String?
     

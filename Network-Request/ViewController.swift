@@ -14,8 +14,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //makeRequest()
-        APIManager.shared.getUsers { users in
-            print(users.count)
+//        APIManager.shared.getUsers { users in
+//            print(users.count)
+//        }
+        APIManager.shared.getPosts { posts in
+            // do something with posts
+        }
+        
+        APIManager.shared.getAlbums { albums in
+            // do something with albums
         }
     }
     

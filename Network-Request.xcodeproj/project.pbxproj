@@ -14,6 +14,7 @@
 		E408FE3D2B9BA3910087EDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E408FE3C2B9BA3910087EDBA /* Assets.xcassets */; };
 		E408FE402B9BA3910087EDBA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E408FE3F2B9BA3910087EDBA /* Base */; };
 		E489DA3F2B9BD9BB00EDEC49 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489DA3E2B9BD9BB00EDEC49 /* Jokes.swift */; };
+		E489DA462B9BDF9300EDEC49 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489DA452B9BDF9300EDEC49 /* Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E408FE3F2B9BA3910087EDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E408FE412B9BA3910087EDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E489DA3E2B9BD9BB00EDEC49 /* Jokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
+		E489DA452B9BDF9300EDEC49 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,47 @@
 			children = (
 				E408FE332B9BA3900087EDBA /* AppDelegate.swift */,
 				E408FE352B9BA3900087EDBA /* SceneDelegate.swift */,
+				E408FE372B9BA3900087EDBA /* ViewController.swift */,
 				E408FE392B9BA3900087EDBA /* Main.storyboard */,
 				E408FE3C2B9BA3910087EDBA /* Assets.xcassets */,
 				E408FE3E2B9BA3910087EDBA /* LaunchScreen.storyboard */,
 				E408FE412B9BA3910087EDBA /* Info.plist */,
-				E408FE372B9BA3900087EDBA /* ViewController.swift */,
-				E489DA3E2B9BD9BB00EDEC49 /* Jokes.swift */,
+				E489DA412B9BDF4200EDEC49 /* Network */,
+				E489DA402B9BDF1100EDEC49 /* Jokes */,
 			);
 			path = "Network-Request";
+			sourceTree = "<group>";
+		};
+		E489DA402B9BDF1100EDEC49 /* Jokes */ = {
+			isa = PBXGroup;
+			children = (
+				E489DA3E2B9BD9BB00EDEC49 /* Jokes.swift */,
+			);
+			path = Jokes;
+			sourceTree = "<group>";
+		};
+		E489DA412B9BDF4200EDEC49 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E489DA432B9BDF5D00EDEC49 /* Services */,
+				E489DA422B9BDF5800EDEC49 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E489DA422B9BDF5800EDEC49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E489DA432B9BDF5D00EDEC49 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E489DA452B9BDF9300EDEC49 /* Manager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +180,7 @@
 				E408FE342B9BA3900087EDBA /* AppDelegate.swift in Sources */,
 				E489DA3F2B9BD9BB00EDEC49 /* Jokes.swift in Sources */,
 				E408FE362B9BA3900087EDBA /* SceneDelegate.swift in Sources */,
+				E489DA462B9BDF9300EDEC49 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

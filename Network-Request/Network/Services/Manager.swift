@@ -53,3 +53,12 @@ enum APIType {
         }
     }
 }
+
+class APIManager {
+    
+    static let shared = APIManager() //Singeltone
+    
+    func getUsers() {
+        
+    }
+}

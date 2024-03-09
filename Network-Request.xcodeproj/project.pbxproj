@@ -15,6 +15,7 @@
 		E408FE402B9BA3910087EDBA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E408FE3F2B9BA3910087EDBA /* Base */; };
 		E489DA3F2B9BD9BB00EDEC49 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489DA3E2B9BD9BB00EDEC49 /* Jokes.swift */; };
 		E489DA462B9BDF9300EDEC49 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489DA452B9BDF9300EDEC49 /* Manager.swift */; };
+		E489DA482B9BED2200EDEC49 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489DA472B9BED2200EDEC49 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E408FE412B9BA3910087EDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E489DA3E2B9BD9BB00EDEC49 /* Jokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
 		E489DA452B9BDF9300EDEC49 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		E489DA472B9BED2200EDEC49 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		E489DA422B9BDF5800EDEC49 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E489DA472B9BED2200EDEC49 /* Users.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				E408FE342B9BA3900087EDBA /* AppDelegate.swift in Sources */,
 				E489DA3F2B9BD9BB00EDEC49 /* Jokes.swift in Sources */,
 				E408FE362B9BA3900087EDBA /* SceneDelegate.swift in Sources */,
+				E489DA482B9BED2200EDEC49 /* Users.swift in Sources */,
 				E489DA462B9BDF9300EDEC49 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
